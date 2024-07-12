@@ -1,0 +1,236 @@
+body {
+    font-family: "Manrope", sans-serif;
+    width: 100%;
+    font-weight: 400;
+    background: #F5F5F5;
+    letter-spacing: -0.03cm;
+}
+h1 {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+}
+h2 {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 30px;
+    line-height: 41px;
+}
+h1, h2, h3 {
+    color: #121212;
+}
+section {  
+    margin: auto; 
+    width: 1400px;  
+    padding: 150px 125px 0 125px;
+}
+section:first-child {
+    margin-top: 0;
+    padding-top: 70px;
+}
+.section-long {
+    padding-bottom: 150px;
+}
+.section-full {
+    width: 100%;
+}
+.section-nopadd {
+    padding: 0;
+}
+
+.container-black {
+    background-color: #000;
+}
+.container-black h2 {
+    color: #FFF;
+}
+.container-black h3 {
+    color: #FFF;
+}
+.container {
+    min-width: 1400px;
+    margin: auto;
+    background: #FFF;
+}
+.interior {
+    position: relative;
+    margin-top: 30px;
+    width: 1150px;
+    height: 500px;
+    background-image: url('/resources/Rectangle1.png');
+}
+.image__text {
+    position: absolute;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFF;
+    width: 430px;
+    text-align: left;
+    left: 40px;
+    bottom: 40px;
+}
+
+p.description {
+    font-size: 45px;
+    line-height: 61px;
+    color: #121212;
+    text-align: left;
+    margin-top: 30px;
+    letter-spacing: -0.03cm;
+}
+a.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 20px 40px;
+    color: #FFFFFF;
+    background-color: #AD1818;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 27px;
+    text-decoration: none;
+}
+.projects {
+    margin-top: 30px;
+}
+.projects .project {
+    margin-top: 90px;
+}
+.projects :first-child{
+    margin-top: 0;
+}
+.project__image {
+    margin-bottom: 15px;
+}
+.project__link {
+    font-size: 20px;
+    line-height: 27px;
+    color: #AD1818;
+    text-decoration: none;
+}
+.services {
+    margin-top: 34px;
+}
+.services .service {
+    margin-top: 60px;
+}
+.services:first-child {
+    margin-top: 0;
+}
+.widthBtn {
+    display: block;
+    width: 100%;
+    height: 153px;
+    line-height: 153px;
+    margin-top: 90px;
+    color: #AD1818;
+    border: 1px solid #AD1818;
+    font-size: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+.widthBtn:hover {
+    background-color: #AD1818;
+    color: #FFF;
+}
+.service__image {
+    margin-bottom: 15px;
+}
+
+header {
+    padding: 33px 125px 0 125px;
+    width: 1400px;
+    margin: auto;
+}
+footer {
+    padding: 60px 0 30px 0;
+}
+.footer__title {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 27px;
+    opacity: 0.5;
+    text-align: center;
+    margin-top: 87px;
+}
+.footer__nav {
+    width: 450px;
+    margin: auto;
+}
+.footer__link {
+    margin-left: 50px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    text-decoration: none;
+    color: #FFF;
+}
+.footer__link:first-child {
+    margin: 0;
+}
+.footer__link:hover {
+    opacity: 0.5;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.nav {
+    float: right;
+}
+.nav_link {
+    margin-left: 60px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    text-decoration: none;
+    color: #121212;
+}
+.nav_link:hover {
+    opacity: 0.5;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.WidthImage {
+    position: relative;
+    width: 100%;
+    height: 717px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0.52%, rgba(0, 0, 0, 0.4) 82.81%), url(/resources/Rectangle9.png);
+    background-position: 50%;
+    background-size: cover;
+}
+.WidthImage_text {
+    position: absolute;
+    left: 125px;
+    bottom: 60px;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFF;
+}
+.Phone-before:before {
+    content: "";
+    display: block;
+    margin-bottom: 12px;
+    margin-left: -5px;
+    width: 24px;
+    height: 24px;
+    background-image: url("/resources/phone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contacts-phone {
+    font-size: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #121212;
+}
+.contacts-mail {
+    font-size: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #121212;
+    opacity: 0.5; 
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
