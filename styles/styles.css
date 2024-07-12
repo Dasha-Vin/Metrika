@@ -61,7 +61,6 @@ section:first-child {
     margin-top: 30px;
     width: 1150px;
     height: 500px;
-    background-image: url('/resources/Rectangle1.png');
 }
 .image__text {
     position: absolute;
