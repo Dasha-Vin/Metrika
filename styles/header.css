@@ -1,0 +1,20 @@
+header {
+    padding: 33px 125px 0 125px;
+    width: 1400px;
+    margin: auto;
+}
+.nav {
+    float: right;
+}
+.nav_link {
+    margin-left: 60px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    text-decoration: none;
+    color: #121212;
+}
+.nav_link:hover {
+    opacity: 0.5;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}

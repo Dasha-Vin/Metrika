@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,97 +11,253 @@
         <title>Метрика</title>
     </head>
     <body>
-        <div class="container">
-            <header>
-                <img class logo src="resources/Метрика.png" alt="">
+        <!--    <header>
+                <img class="logo" src="resources/Метрика.png" alt="">
                 <nav class="nav">
                     <a class="nav_link" href="#about_us">О НАС</a>
                     <a class="nav_link" href="#projects">ПРОЕКТЫ</a>
                     <a class="nav_link" href="#services">УСЛУГИ</a>
                     <a class="nav_link" href="#contacts">КОНТАКТЫ</a>
                 </nav>
-            </header>
+            </header> -->
             <main>
                 <section>
-                    <h1>Современные и стильные интерьеры для комфортной жизни</h1>
+                    <h1 class="interior_text">Современные и стильные интерьеры для комфортной жизни</h1>
                     <div class="interior">
-                        <img src="resources/Rectangle1.png" alt="">
-                        <p class="image__text">Мы - команда квалифицированных дизайнеров и архитекторов, занимающихся разработкой и реализацией дизайн-проектов</p>
+                        <p class="image__text">
+                            Мы - команда квалифицированных дизайнеров и архитекторов, 
+                            занимающихся разработкой и реализацией дизайн-проектов
+                        </p>
                     </div>    
                 </section>
-                <section>
-                <h2 id="about_us">О НАС</h2>
-                <p class="description">Студия основана в 2011 году. Полностью отдаемся проектированию и реализации интерьеров. К нам обращаются за уютом, индивидуальными решениями и практичностью. Находим конструктивные решения для каждого интерьера, вплоть до каждой детали — нацелены на результат.</p>
-                <a class="btn" href="/">Посмотреть услуги</a>    
+                <section class="section-about_us">
+                    <h2 id="about_us">О НАС</h2>
+                    <p class="description">
+                        Студия основана в 2011 году. Полностью отдаемся проектированию 
+                        и реализации интерьеров. К нам обращаются за уютом, индивидуальными 
+                        решениями и практичностью. Находим конструктивные решения для каждого 
+                        интерьера, вплоть до каждой детали — нацелены на результат.
+                    </p>
+                    <a class="btn" href="/">Посмотреть услуги</a>    
                 </section>
+
                 <section class="section-long">
                     <h2 id="projects">проекты</h2>
                     <ul class="projects">
                         <li class="project">
-                            <img class="project__image" style="height: 450px;" src="resources/Rectangle2.png" alt="">
-                            <h3>ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</h3>
+                            <picture>
+                                <source media="(max-width: 500px)" srcset="resources/right_mobile.png">
+                                <source media="(max-width: 1199px)" srcset="resources/right_tablet.png">
+                                <img class="project__image" src="resources/Rectangle2.png" alt="">
+                            </picture>
+                            <h3 class="project_title">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</h3>
                             <a class="project__link" href="/">Подробнее →</a>
                         </li>  
                         <li class="project">
-                            <img class="project__image" style="height: 450px;" src="resources/Rectangle3.png" alt="">
-                            <h3>ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</h3>
+                            <picture>
+                                <source media="(max-width: 500px)" srcset="resources/norway_mobile.png">
+                                <source media="(max-width: 1199px)" srcset="resources/norway_tablet.png">
+                                <img class="project__image" src="resources/Rectangle3.png" alt="">
+                            </picture>
+                            <h3 class="project_title">ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</h3>
                             <a class="project__link" href="/">Подробнее →</a>
                         </li>
                         <li class="project">
-                            <img class="project__image" style="height: 450px;" src="resources/Rectangle4.png" alt="">
-                            <h3>ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</h3>
+                            <picture>
+                                <source media="(max-width: 500px)" srcset="resources/grey_mobile.png">
+                                <source media="(max-width: 1199px)" srcset="resources/grey_tablet.png">
+                                <img class="project__image" src="resources/Rectangle4.png" alt="">
+                            </picture>
+                            <h3 class="project_title">ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</h3>
                             <a class="project__link" href="/">Подробнее →</a>
                             <a href="" class="widthBtn">Смотреть все проекты</a>
                         </li> 
                     </ul>   
                 </section>
-                <div class="container-black section-long section full">
-                    <section>
+
+                <div class="container-black">
+                    <section class="section-long">
                         <h2 id="services">Услуги</h2>
                         <ul class="services">
                             <li class="service">
-                                <img class="service__image" src="resources/Rectangle5.png" alt="">
-                                <h3>Планировочное решение — от 2500₽/м²</h3>
+                                <img class="service__image" src="resources/Rectangle5-table.png" alt="">
+                                <div class="service__price">от 2500₽/м²</div>                          
+                                <div class="service__text">Планировочное решение</div>
                             </li>
                             <li class="service">
-                                <img class="service__image" src="resources/Rectangle6.png" alt="">
-                                <h3>Дизайн-проект — от 3000₽/м²</h3>
+                                <img class="service__image" src="resources/Rectangle6-table.png" alt="">
+                                <div class="service__price">от 3000₽/м²</div>
+                                <div class="service__text">Дизайн-проект</div>
                             </li>
                             <li class="service">
-                                <img class="service__image" src="resources/Rectangle7.png" alt="">
-                                <h3>Авторский надзор — от 30 000₽ в месяц</h3>
+                                <img class="service__image" src="resources/Rectangle7-table.png" alt="">
+                                <div class="service__price">от 30 000₽/мес</div>
+                                <div class="service__text">Авторский надзор</div>
                             </li>
                             <li class="service">
-                                <img class="service__image" src="resources/Rectangle8.png" alt="">
-                                <h3>Комплектация — 5% от стоимости спецификации</h3>
+                                <img class="service__image" src="resources/Rectangle8-table.png" alt="">
+                                <div class="service__price">5% от стоимости</div>
+                                <div class="service__text">Комплектация</div>
                             </li>
-                        </ul>    
+                        </ul> 
+                        <button class="js-btn widthBtn widthBtn_inverted">Заказать услугу</button> 
+
+                        <div class="popup js-popup">
+                            <div class="popup__content js-popup__content">
+                                <p class="popup__title">Заказать услугу</p>
+                                <p class="popup__text">Заполните форму, мы свяжемся с вами в течение<br />суток</p>
+                                
+                                <input 
+                                    class="input" 
+                                    type="text"
+                                    placeholder="Имя">
+                                <input 
+                                    class="input" 
+                                    type="text"
+                                    placeholder="Электронная почта">
+                                <input 
+                                    class="input" 
+                                    type="text"
+                                    placeholder="Номер телефона">
+                                
+                                <a class="widthBtn widthBtn_popup" href="/">Отправить</a>
+                                    
+                                <div class=" js-popup__close-btn popup__close-btn"></div>
+                            </div>
+                        </div> 
+                        <script src="popup.js"></script> 
                     </section>
                 </div>
-                <section class="section-full section-nopadd">
-                    <div class="WidthImage">
-                        <p class="WidthImage_text">Проект  Двухкомнатной<br />квартиры в ЖК Лесной Пейзаж</p>
+
+                <section class="section-long">
+                    <h2 id="reviews">отзывы</h2>
+                    <ul class="reviews">
+                        <li class="review">
+                            <div class="review__title">Ксения, проект 65 кв.м.</div>
+                            <div class="review__text">
+                                Хочу искренне поблагодарить Вас за работу, проделанную на высоком 
+                                уровне! Нам с мужем было очень приятно с Вами работать! Спасибо за 
+                                Ваше умение правильно слышать пожелания своих клиентов и выполнять 
+                                работу, которая превосходит все ожидания! Мы даже не надеялись, что 
+                                на 34 кв.м. кто-то сможет нам грамотно разместить все, что мы хотим 
+                                и даже больше!<br /><br/>Вам удалось это просто превосходно! 
+                                Нам лишь осталось воплотить красоту, которую Вы нам создали в 
+                                жизнь и поделиться с Вами результатом!
+                            </div>
+                        </li>
+                        <li class="review">
+                            <div class="review__title">Регина, проект 89 кв.м.</div>
+                            <div class="review__text">
+                                Спасибо большое за такой классный проект! Все стильно, круто, 
+                                продумано! Очень приятно было с вами работать! Спасибо, что 
+                                терпели наши «хочу это, хочу то» в поисках идеального для нас 
+                                ремонта. Здорово, что мы нашли такого основательного, 
+                                ответственного и внимательного к деталям дизайнера!<br /><br />Хочется 
+                                скорее реализовать проект и наслаждаться современной, 
+                                функциональной и красивой квартирой! Будем рекомендовать Вас всем 
+                                друзьям и знакомым!
+                            </div>
+                        </li>
+                        <li class="review">
+                            <div class="review__title">Яна, проект 120 кв.м.</div>
+                            <div class="review__text">
+                                Хотелось бы сказать большое спасибо за проделанную работу! В 
+                                задачу Марины входила разработка дизайн-проекта в минимальные 
+                                сроки, и мне, конечно, не хотелось при этом потерять качество 
+                                выполнения работы. Но волнения были напрасны: все вопросы 
+                                решались оперативно, всегда предлагалось несколько вариантов 
+                                решения, а также предоставлялись комментарии, какой способ 
+                                решения будет более подходящим.<br /><br />В итоге проект 
+                                был сдан в оговоренный срок, и мне просто не терпится 
+                                приступить к его реализации! Проект получился очень стильным 
+                                и современным! Буду рекомендовать Вас тем, кому еще предстоит 
+                                это непростое дело - ремонт!
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="section-gallery section-nopadd">
+                    <div class="gallery">
+                        <div class="container">
+                            <div class="gallery-title-wrapper">
+                                <div class="container-gallery">
+                                    <p class="gallery-title">ГАЛЕРЕЯ ПРОЕКТОВ</p>
+                                </div>
+                            </div>    
+                        </div>
+                        
+                        <div class="gallery__slides">
+                            <div class="gallery__slide gallery__slide_active">
+                                <div class="gallery_box gallery_image_title">
+                                    <div class="container">
+                                        <p class="image-gallery-text">
+                                            Проект  Двухкомнатной квартиры в ЖК Лесной Пейзаж
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery__slide">
+                                <div class="gallery_box gallery_image_second">
+                                    <div class="container">
+                                        <p class="image-gallery-text">
+                                            Проект гостиной в ЖК Маяк
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery__slide">
+                                <div class="gallery_box gallery_image_third">
+                                    <div class="container">
+                                        <p class="image-gallery-text">
+                                            Визуализация кухни-гостиной в частном доме
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery__slide">
+                                <div class="gallery_box gallery_image_fourth">
+                                    <div class="container">
+                                        <p class="image-gallery-text">
+                                            Проект кухни в скандинавском стиле для ЖК Северный Ветер
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="gallery_controls-wrapper">
+                                <div class="container-controls">
+                                    <div class="gallery__controls">
+                                        <button class="gallery__control-prev"></button>
+                                        <button class="gallery__control-next"></button>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        
                     </div>
                 </section>
+                <script src="gallery.js"></script>
+
                 <section class="section-long">
                     <h2 id="contacts" class="Phone-before">КОНТАКТЫ</h2>
-                    <p>
-                        <a class="contacts-phone" href="tel:+7 935  895-45-35">+7 935  895-45-35</a>
-                    </p>
-                    <p>
-                        <a class="contacts-mail" href="mailto:hello@mail.com">hello@mail.com</a>
-                    </p>
+                    <div class="contacts__block">
+                        <a class="contacts-phone" href="tel:+7 935  895-45-35">+7 935  895-45-35</a>  
+                        <a class="contacts-mail" href="mailto:hello@mail.com">hello@mail.com</a>      
+                    </div>
                 </section>
+
                 <footer class="container-black">
-                    <nav class="footer__nav">
-                        <a class="footer__link" href="#about_us">О НАС</a>
-                        <a class="footer__link" href="#projects">ПРОЕКТЫ</a>
-                        <a class="footer__link" href="#services">УСЛУГИ</a>
-                        <a class="footer__link" href="#contacts">КОНТАКТЫ</a>
-                    </nav>    
-                    <p class="footer__title">студия дизайна интерьера Метрика — 2023</p>
-                </footer>
+                        <nav class="footer__nav">
+                            <a class="footer__link" href="#about_us">О НАС</a>
+                            <a class="footer__link" href="#projects">ПРОЕКТЫ</a>
+                            <a class="footer__link" href="#services">УСЛУГИ</a>
+                            <a class="footer__link" href="#contacts">КОНТАКТЫ</a>
+                        </nav>    
+                        <p class="footer__title">студия дизайна интерьера Метрика — 2024</p>
+                    </footer>
+                </div>
             </main>
-        </div>
     </body>
 </html>
